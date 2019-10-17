@@ -1,0 +1,33 @@
+<div class="row mt-5">
+  <div class="col-md-6 m-auto">
+  <h1>Welcome!!! Please login below...</h1>
+    <div class="card card-body">
+      <h1 class="text-center mb-3">Login</h1>
+      <%- include('./partials/flashMessages')%>
+      <form action="/" method="POST">
+        <div class="form-group">
+          <label for="userID">ID</label>
+          <input
+            type="userID"
+            id="userID"
+            name="userID"
+            class="form-control"
+          />
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            class="form-control"
+          />
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Login</button>
+      </form>
+      <p class="lead mt-4">
+        No Account? <a href="/user/register">Contact Admin</a>
+      </p>
+    </div>
+  </div>
+</div>

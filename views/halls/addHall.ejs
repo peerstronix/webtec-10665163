@@ -1,0 +1,38 @@
+<h1>Add Hall</h1>
+
+
+<div class="row mt-5">
+  <div class="col-md-6 m-auto">
+    <div class="card card-body">
+      <h1 class="text-center mb-3">Add New Hall</h1>
+
+      <%- include('../partials/flashMessages')%>
+      
+      <form action="/halls/addHall" method="POST">
+        <div class="form-group">
+          <label for="name">Hall Name</label>
+          <input
+            type="name"
+            id="name"
+            name="name"
+            class="form-control"
+            value="<%= typeof name != 'undefined' ? name : '' %>"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="name">Hall ID</label>
+          <input
+            type="hallID"
+            id="hallID"
+            name="hallID"
+            class="form-control"
+            value="<%= typeof hallID != 'undefined' ? hallID : '' %>"
+          />
+        </div>
+
+        <button type="submit" class="btn btn-primary">Add</button>
+      </form>
+    </div>
+  </div>
+</div>

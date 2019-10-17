@@ -1,0 +1,20 @@
+####    Technologies used   ####
+################################
+
+1.  Express:    This is our framework
+
+2.  BCryptJS:   This will be used to store user passwords in an encrypted form
+
+3.  Passport:   This is used for user authentication
+
+4.  Passport-Local: This defines the kind of strategy we will be using and this is the local-strategy.
+
+5.  EJS:        This is a templating engine we will be using to generate the front-end for our application.
+
+6.  Express-EJS-Layout: The EJS template engine does not come with layout so we will be using this for out layouts.
+
+7.  Mongoose:   This will allow us to deal with MongoDB.
+
+8.  Connect-flash:  This is used for flash messaging.
+
+9.  Express-session:    Other technologies we will be using such as Connect-flash depends on Express-session.
